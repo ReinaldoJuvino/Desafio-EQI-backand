@@ -13,15 +13,16 @@ module.exports = {
   production: {
     client: 'postgresql',
     debug: true,
-    // connection: process.env.DATABASE_URL,
-    connection: {
-        database: process.env.DATABASE_CONECTION_NAME,
-        port: process.env.DATABASE_CONECTION_PORT,
-        user: process.env.DATABASE_CONECTION_USER,
-        password: process.env.DATABASE_CONECTION_PASSWORD,
-        host: process.env.DATABASE_CONECTION_HOST,
-        ssl: true
-    },
+    ssl: true,
+    connection: process.env.DATABASE_URL,
+    // connection: {
+    //     database: process.env.DATABASE_CONECTION_NAME,
+    //     port: process.env.DATABASE_CONECTION_PORT,
+    //     user: process.env.DATABASE_CONECTION_USER,
+    //     password: process.env.DATABASE_CONECTION_PASSWORD,
+    //     host: process.env.DATABASE_CONECTION_HOST,
+    //     ssl: true
+    // },
     pool: {
       min: 2,
       max: 10
