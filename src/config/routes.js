@@ -2,7 +2,7 @@ module.exports = app => {
     
     app.route('/')
         .get(function (req, res) {
-        res.send('Welcome to API DesapegaSolidario');
+        res.send('Welcome to APi');
     });
     app.route('/users')
         .post(app.src.api.user.save)
