@@ -4,7 +4,6 @@ module.exports = app => {
     const save = async (request, response) => {
         
         const user = request.body
-        console.log(request.params.id)
         if(request.params.id) user.id = request.params.id
         
         try {
