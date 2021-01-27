@@ -9,7 +9,7 @@ app.db = db;
 
 consign()
     .then('./src/config/middlewares.js')
-    //.then('./src/api/validation.js')
+    .then('./src/api/validation.js')
     .then('./src/api')
     .then('./src/config/routes.js')
     .into(app);
