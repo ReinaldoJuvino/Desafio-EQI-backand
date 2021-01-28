@@ -11,11 +11,11 @@ module.exports = app => {
     app.route('/users/:id')
         .put(app.src.api.user.save)
     
-        app.route('/investiment-parameters')
-        .post(app.src.api.investiment.save)
+        app.route('/investment-parameters')
+        .post(app.src.api.investment.save)
 
-    app.route('/investiment-parameters/:id')
-        .put(app.src.api.investiment.save)
-        .get(app.src.api.investiment.get)
+    app.route('/investment-parameters/:id')
+        .put(app.src.api.investment.save)
+        .get(app.src.api.investment.get)
         
 }
