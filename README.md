@@ -1,6 +1,6 @@
 # Desafio-EQI-backend
 
-Projeto desenvolvido para seleção no programa elixir da Stone.
+Projeto desenvolvido para seleção na EQI Investimentos.
 
 ## Ferramentas utilizadas:
 
@@ -44,7 +44,7 @@ npm start
 
 # End-Point `/investment-parameters`
 
-Para realizar o consumo desse serviço import o arquivo [Desafio-EQI]() para o seu insomnia.
+Para realizar o consumo desse serviço import o arquivo [Desafio-EQI](https://github.com/ReinaldoJuvino/Desafio-EQI-backend/blob/master/Desafio-EQI.json) para o seu insomnia.
 
-## :x: OBS: Para a realização de testes siga o padrão do json determinado em [Desafio-EQI]().
+## :x: OBS: Para a realização de testes siga o padrão do json determinado em [Desafio-EQI](https://github.com/ReinaldoJuvino/Desafio-EQI-backend/blob/master/Desafio-EQI.json).
 
