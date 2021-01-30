@@ -26,13 +26,20 @@ module.exports = app => {
             app.db('users')
                 .update(user)
                 .where({ id: user.id })
-                .then(_ => response.status(204).send())
+                .then(_ => response.status(204))
                 .catch(err => response.status(500).send(err))
+
+            response.json(user)
         } else {
             app.db('users')
-                    .insert(user)
-                    .then(_ => response.status(204).send())
-                    .catch(err => response.status(500).send(err))
+                .insert(user)
+                .returning('id')
+                .then(function (id){
+                    user.id = id[0]
+                    response.json(user)
+                })
+                .then(_ => response.status(204))
+                .catch(err => response.status(500).send(err))
         }
     }
     const get = async (request,response)=>{
